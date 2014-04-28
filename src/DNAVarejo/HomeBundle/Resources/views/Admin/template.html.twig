@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}DNA Varejo{% endblock %}</title>
+        {% block stylesheets %}
+        
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        Hello {{ name }}!
+        {% block javascripts %}
+        <script src="{{ asset('js/admin.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

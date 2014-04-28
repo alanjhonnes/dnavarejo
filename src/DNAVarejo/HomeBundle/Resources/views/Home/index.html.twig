@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}DNA Varejo{% endblock %}</title>
+        {% block stylesheets %}
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <nav id="ribbon-menu">
+                    <div id="ribbon-menu-stripe">
+                        <div id="logo">
+                            <img src="{{ asset('images/logo.png') }}" alt="DNA Varejo"/>
+                        </div>
+                        <a href='#'><span>QUEM SOMOS</span></a>
+                        <a href='#'><span>O QUE FAZEMOS</span></a>
+                        <a href='#'><span>SERVIÇOS</span></a>
+                        <a href='#'><span>CLIENTES</span></a>
+                        <a href='#'><span>CONTATO</span></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        {% block javascripts %}
+        <script src="{{ asset('js/jquery-1.11.0.min.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
