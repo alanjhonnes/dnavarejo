@@ -17,7 +17,9 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Acme\DemoBundle\AcmeDemoBundle(),
+            new DNAVarejo\CoreBundle\DNAVarejoCoreBundle(),
             new DNAVarejo\HomeBundle\DNAVarejoHomeBundle(),
+            new DNAVarejo\AdminBundle\DNAVarejoAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

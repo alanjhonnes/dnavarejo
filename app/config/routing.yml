@@ -1,3 +1,13 @@
+dna_varejo_admin:
+    resource: "@DNAVarejoAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+#dna_varejo_core:
+#    resource: "@DNAVarejoCoreBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
 dna_varejo_home:
     resource: "@DNAVarejoHomeBundle/Controller/"
     type:     annotation
