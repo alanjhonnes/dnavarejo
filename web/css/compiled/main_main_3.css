@@ -1,0 +1,48 @@
+body {
+  background-color: #aaaaaa;
+}
+#ribbon-menu {
+  display: table;
+  height: 105px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/menu-gradient.png);
+  background-repeat: repeat-x;
+}
+#ribbon-menu-stripe {
+  padding-top: 10px;
+  display: table-row;
+}
+#ribbon-menu-stripe:after,
+#ribbon-menu-stripe:before {
+  margin-top: 0.5em;
+  content: "";
+  float: left;
+}
+#ribbon-menu-stripe a:link,
+#ribbon-menu-stripe a:visited {
+  color: #000;
+  text-decoration: none;
+  display: table-cell;
+  height: 3.5em;
+  overflow: hidden;
+}
+#ribbon-menu-stripe a:hover span {
+  background: #FFD204;
+  margin-top: 0;
+}
+#ribbon-menu-stripe span {
+  background: #fff;
+  display: inline-block;
+  line-height: 3em;
+  padding: 0 1em;
+  margin-top: 0.5em;
+  position: relative;
+  -webkit-transition: background-color 0.2s;
+  /* Saf3.2+, Chrome */
+  -moz-transition: background-color 0.2s;
+  /* FF4+ */
+  -ms-transition: background-color 0.2s;
+  /* IE10 */
+  -o-transition: background-color 0.2s;
+  /* Opera 10.5+ */
+  transition: background-color 0.2s;
+}

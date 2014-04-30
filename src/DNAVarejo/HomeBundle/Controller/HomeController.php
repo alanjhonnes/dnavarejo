@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     /**
      * @Route("/")
-     * @Template("DNAVarejoHomeBundle:Home:index.html.twig")
+     * @Template
      */
     public function indexAction()
     {

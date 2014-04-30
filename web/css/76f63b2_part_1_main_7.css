@@ -1,0 +1,38 @@
+#ribbon-menu {
+  display: block;
+}
+#ribbon-menu:after,
+#ribbon-menu:before {
+  margin-top: 0.5em;
+  content: "";
+  float: left;
+}
+#ribbon-menu a:link,
+#ribbon-menu a:visited {
+  color: #000;
+  text-decoration: none;
+  float: left;
+  height: 3.5em;
+  overflow: hidden;
+}
+#ribbon-menu a:hover span {
+  background: #FFD204;
+  margin-top: 0;
+}
+#ribbon-menu span {
+  background: #fff;
+  display: inline-block;
+  line-height: 3em;
+  padding: 0 1em;
+  margin-top: 0.5em;
+  position: relative;
+  -webkit-transition: background-color 0.2s, margin-top 0.2s;
+  /* Saf3.2+, Chrome */
+  -moz-transition: background-color 0.2s, margin-top 0.2s;
+  /* FF4+ */
+  -ms-transition: background-color 0.2s, margin-top 0.2s;
+  /* IE10 */
+  -o-transition: background-color 0.2s, margin-top 0.2s;
+  /* Opera 10.5+ */
+  transition: background-color 0.2s, margin-top 0.2s;
+}
