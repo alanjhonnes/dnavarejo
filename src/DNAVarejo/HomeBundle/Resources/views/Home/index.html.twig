@@ -2,9 +2,13 @@
 <html>
     <head>
         <title>{% block title %}DNA Varejo{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="{% block description %}{% endblock %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {% block stylesheets %}
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/main.css" rel="stylesheet"/>
+        <link href="{{ asset('bundles/dnavarejohome/css/bootstrap.min.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('bundles/dnavarejohome/css/main.css') }}" rel="stylesheet"/>
         {% endblock %}
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -13,7 +17,7 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+        <script src="{{ asset('bundles/dnavarejohome/js/modernizr-2.6.2.min.js') }}"></script>
     </head>
     <body>
         <div class="container">
@@ -33,8 +37,16 @@
             </div>
         </div>
         {% block javascripts %}
-        <script src="{{ asset('js/jquery-1.11.0.min.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script>
+        <script src="{{ asset('bundles/dnavarejohome/js/jquery-1.11.0.min.js') }}"></script>
+        <script src="{{ asset('bundles/dnavarejohome/js/main.js') }}"></script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
         {% endblock %}
     </body>
 </html>
