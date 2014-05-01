@@ -3,3 +3,8 @@ dna_varejo_home:
     type:     annotation
     prefix:   /
 
+dna_varejo_client:
+    resource: "@DNAVarejoCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

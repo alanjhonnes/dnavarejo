@@ -37,35 +37,60 @@
                     <img src="{{ asset('bundles/dnavarejohome/images/logo.png') }}" alt="DNA Varejo"/>
                 </div>
 
-                <a href='#'><span>QUEM SOMOS</span></a>
-                <a href='#'><span>O QUE FAZEMOS</span></a>
-                <a href='#'><span>SERVIÇOS</span></a>
-                <a href='#'><span>CLIENTES</span></a>
-                <a href='#'><span>CONTATO</span></a>
+                <a data-target="about"><span>QUEM SOMOS</span></a>
+                <a data-target="work"><span>O QUE FAZEMOS</span></a>
+                <a data-target="services"><span>SERVIÇOS</span></a>
+                <a data-target="clients"><span>CLIENTES</span></a>
+                <a data-target="contact"><span>CONTATO</span></a>
             </div>
         </nav>
-        <div class="container">
-            <div id="content">
-                <section id="about-section">
+        <div  id="content" class="container">
+            
+                <section id="about">
+                    <div class="row">
+                        <div id="" class="col-md-7">
+                            <h1>Somos</h1>
+                            <p>
+                                uma consultoria especializada em Representação Comercial eTrade Marketing.
+                            </p>
+                            <div class="box">
+                                <p>Oferecemos soluções personalizadas para levar nossos clientes a novos mercados  e aumentar as vendas de seus produtos com ações focadas no ponto de venda.</p>
+                                <p>Com estrutura moderna e equipes qualificadas, trabalhamos para que distribuição, exposição e venda dos produtos sejam feitos com excelência.</p>
+                                <p>Assim, buscamos nos posicionar como uma solução efetiva para aumento das vendas no varejo, com qualidade e inovação. </p>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            
+                        </div>
+                </section>
+                <div class="divider"></div>
+                <section id="work" class="col-12">
 
                 </section>
                 <div class="divider"></div>
-                <section id="work-section">
+                <section id="services" class="col-12">
+                    <article>
+                        
+                    </article>
+                    <article>
+                        
+                    </article>
+                    <article>
+                        
+                    </article>
+                </section>
+                <div class="divider"></div>
+                <section id="clients" class="col-12">
 
                 </section>
                 <div class="divider"></div>
-                <section id="services-section">
+                <section id="contact" class="col-12">
 
                 </section>
-                <div class="divider"></div>
-                <section id="clients-section">
-
-                </section>
-                <div class="divider"></div>
-                <section id="contact-section">
-
-                </section>
+                
             </div>
+                
         </div>
         
         {% block javascripts %}

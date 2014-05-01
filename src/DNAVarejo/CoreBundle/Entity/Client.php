@@ -21,6 +21,7 @@ class Client {
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank()
+     * @
      */
     protected $name;
     

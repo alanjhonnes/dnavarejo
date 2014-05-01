@@ -1,48 +1,142 @@
+/* line 20, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000320}}
 body {
-  background-color: #aaaaaa;
+  background-color: #ffffff;
 }
+/* line 24, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000324}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+/* line 28, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000328}}
 #ribbon-menu {
-  display: table;
+  font-weight: bold;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  padding-top: 10px;
   height: 105px;
   background-image: url(../../../bundles/dnavarejohome/css/images/menu-gradient.png);
   background-repeat: repeat-x;
 }
+/* line 42, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000342}}
+#ribbon-left,
+#ribbon-right {
+  position: absolute;
+  width: 67px;
+  height: 105px;
+  margin-top: -10px;
+}
+/* line 49, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000349}}
+#ribbon-left {
+  left: 0;
+  margin-left: -67px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/menu-left.png);
+}
+/* line 56, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000356}}
+#ribbon-right {
+  right: 0;
+  margin-right: -67px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/menu-right.png);
+}
+/* line 62, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000362}}
 #ribbon-menu-stripe {
-  padding-top: 10px;
+  width: 100%;
   display: table-row;
+  height: 67px;
 }
-#ribbon-menu-stripe:after,
-#ribbon-menu-stripe:before {
-  margin-top: 0.5em;
-  content: "";
-  float: left;
-}
-#ribbon-menu-stripe a:link,
-#ribbon-menu-stripe a:visited {
-  color: #000;
-  text-decoration: none;
+/* line 66, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000366}}
+#ribbon-menu-stripe a {
   display: table-cell;
-  height: 3.5em;
+  cursor: pointer;
+  width: 16.6%;
+  height: 67px;
   overflow: hidden;
-}
-#ribbon-menu-stripe a:hover span {
-  background: #FFD204;
-  margin-top: 0;
-}
-#ribbon-menu-stripe span {
-  background: #fff;
-  display: inline-block;
-  line-height: 3em;
-  padding: 0 1em;
-  margin-top: 0.5em;
-  position: relative;
-  -webkit-transition: background-color 0.2s;
+  text-align: center;
+  -webkit-transition: all 0.2s;
   /* Saf3.2+, Chrome */
-  -moz-transition: background-color 0.2s;
+  -moz-transition: all 0.2s;
   /* FF4+ */
-  -ms-transition: background-color 0.2s;
+  -ms-transition: all 0.2s;
   /* IE10 */
-  -o-transition: background-color 0.2s;
+  -o-transition: all 0.2s;
   /* Opera 10.5+ */
-  transition: background-color 0.2s;
+  transition: all 0.2s;
+  color: #27348B;
+  text-decoration: none;
+}
+/* line 80, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000380}}
+#ribbon-menu-stripe a:hover,
+#ribbon-menu-stripe a.active-button {
+  background: #64257E;
+  color: #ffffff;
+}
+/* line 86, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000386}}
+#ribbon-menu-stripe span {
+  line-height: 67px;
+}
+/* line 91, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000391}}
+#logo {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 16.6%;
+  padding: 0 10px;
+}
+/* line 100, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003100}}
+#content {
+  background-color: #334C63;
+  min-height: 4000px;
+}
+/* line 104, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003104}}
+#content section {
+  min-height: 100%;
+  padding-top: 100px;
+}
+/* line 113, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003113}}
+.divider {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  left: 0;
+  opacity: 0.4;
+  background-color: #322245;
+}
+/* line 128, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003128}}
+.box {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #000000;
+}
+/* line 132, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003132}}
+#about {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+/* line 135, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003135}}
+#about .box {
+  background-color: #cfe5ed;
 }
