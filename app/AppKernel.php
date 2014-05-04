@@ -20,6 +20,14 @@ class AppKernel extends Kernel
             new DNAVarejo\CoreBundle\DNAVarejoCoreBundle(),
             new DNAVarejo\HomeBundle\DNAVarejoHomeBundle(),
             new DNAVarejo\AdminBundle\DNAVarejoAdminBundle(),
+            
+            //Sonata bundles for admin
+            new Sonata\CoreBundle\SonataCoreBundle(),
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

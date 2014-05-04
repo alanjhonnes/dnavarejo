@@ -15,6 +15,7 @@ $(document).ready(function(){
     var scrollpoints = [];
     var navHeight = 0;
     
+    var colors = ['#3D4D62', '#5E7082', '#657F94', '#7897AC', '#4F8AA8', '#85ABBC', '#697AA9' ];
     
     $activeButton.addClass("active-button");
     
@@ -63,6 +64,7 @@ $(document).ready(function(){
                 if (activeIndex !== totalPoints) {
                     $activeButton.removeClass("active-button");
                     activeIndex = totalPoints;
+                    TweenLite.to('#content', 0.6, { backgroundColor: colors[activeIndex] } );
                     $activeButton = $buttons.eq(totalPoints);
                     $activeButton.addClass("active-button");
                     $activeSection.removeClass('active-section');
@@ -83,6 +85,10 @@ $(document).ready(function(){
         TweenLite.to(window, 0.6, { scrollTo: { y: yOffset } } );
         
         
+    });
+    
+    $(".plus-button").click(function(){
+       $(this).toggleClass("open").prev().fadeToggle("fast");
     });
     
     

@@ -27,7 +27,7 @@
         <![endif]-->
         <script src="{{ asset('bundles/dnavarejohome/js/modernizr-2.6.2.min.js') }}"></script>
     </head>
-    <body>
+    <body id="body">
         <nav id="ribbon-menu" class="container">
             <div id="ribbon-left"></div>
             <div id="ribbon-right"></div>
@@ -48,7 +48,18 @@
             
                 <section id="about">
                     <div class="row">
-                        <div id="" class="col-md-7">
+                        <div class="col-md-4 col-md-push-8">
+                            <div id="white-bar">
+                                <div class="little-circles"></div>
+                                <div class="arrow-red-down"></div>
+                                <div class="supermarket"></div>
+                                <div class="arrow-red-down"></div>
+                                <div class="products"></div>
+                                <div class="arrow-red-down"></div>
+                                <div class="girl-shopping-car"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-md-pull-4">
                             <h1>Somos</h1>
                             <p>
                                 uma consultoria especializada em Representação Comercial eTrade Marketing.
@@ -60,18 +71,190 @@
                             
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            
-                        </div>
+                        
+                    </div>
                 </section>
                 <div class="divider"></div>
                 <section id="work" class="col-12">
-
+                    <h1>Fazemos</h1>
+                    <p>nosso trabalho para que você se dedique ao que sabe fazer melhor: seu produto.</p>
+                    <div>
+                        <article id="work-1">
+                            <div class="work-label">
+                                Sua empresa
+                            </div>
+                            <div class="icon icon-itens"></div>
+                        </article>
+                        <div id="work-arrow-1" class="arrow-red"></div>
+                        <article id="work-2">
+                            <div class="work-label">
+                                DNA
+                            </div>
+                            <div class="icon icon-dna"></div>
+                            <div class="box">
+                                <h3>Representação Comercial</h3>
+                                <p>
+                                    Novos mercados para seu produto.Nossa expertise e contato com grandes redes de varejo permitem colocar seus produtos na gôndola.
+                                </p>
+                            </div>
+                            <div class="plus-button"></div>
+                        </article>
+                        <div id="work-arrow-2" class="arrow-red"></div>
+                        <article id="work-3">
+                            <div class="work-label">
+                                Rede Varejista
+                            </div>
+                            <div class="icon icon-market"></div>
+                        </article>
+                        <div id="work-arrow-3" class="arrow-red"></div>
+                        <article id="work-4">
+                            <div class="work-label">
+                                DNA
+                            </div>
+                            <div class="icon icon-dna"></div>
+                            <div class="box">
+                                <h3>Trade Marketing</h3>
+                                <p>
+                                    Seu produto cara a cara com o consumidor. Com ações no ponto de venda, viabilizamos a venda de produtos e conquista de clientes. <br/>
+                                    Da exposição adequada e material promocional, ao treinamento de atendentes específico para seu produto. 
+                                </p>
+                            </div>
+                            <div class="plus-button"></div>
+                        </article>
+                        <div id="work-arrow-4" class="arrow-red"></div>
+                        <article id="work-5">
+                            <div class="work-label">
+                                Lojas
+                            </div>
+                            <div class="icon icon-cart"></div>
+                        </article>
+                        <div id="work-arrow-5" class="arrow-red"></div>
+                        <article id="work-6">
+                            <div class="work-label">
+                                DNA
+                            </div>
+                            <div class="icon icon-dna"></div>
+                            <div class="box">
+                                <h3>Resultados</h3>
+                                <p>
+                                    Expansão para seus negócios.
+Nossas ações permitem uma rica experiência de marca e contato direto com o seu produto. Assim, expandimos seu mercado,  suas vendas e lucro, enquanto conquistamos seu público-alvo. 
+                                </p>
+                            </div>
+                            <div class="plus-button"></div>
+                        </article>
+                        <div id="work-arrow-6" class="arrow-red"></div>
+                    </div>
                 </section>
                 <div class="divider"></div>
-                <section id="services" class="col-12">
-                    <article>
-                        
+                <section id="services-group" class="col-12">
+                    <article id="services">
+                        <h1>Serviços</h1>
+                        <p>
+                            que promovem a sinergia entre clientes, redes de varejo e profissionais contratados, abrangendo todos os níveis estratégicos da Representação Comercial e Trade Marketing.<br/>
+                            Clique em <img src="{{ asset('bundles/dnavarejohome/css/images/plus.png') }}" alt="" width="25"/> para saber mais.
+                        </p>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="girl-icon">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                    <div class="girl-icon">
+                                        <div class="crossmark"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="girl-icon">
+                                        <div class="crossmark"></div>
+                                    </div>
+                                    <div class="girl-icon">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="responsive-green-arrow"></div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="resume"></div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="responsive-green-arrow"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="apples"></div>
+                                    <div class="girl"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <h3>1. Recrutamento         &  Seleção</h3>
+                                <ul>
+                                    <li>Processo de Admissão.</li>
+                                    <li>Folha de pagamento e benefícios.</li>
+                                    <li>
+                                        Treinamento e qualificação:
+                                        <ul>
+                                            <li>Atendentes Vendedoras.</li>
+                                            <li>Degustadoras.</li>
+                                            <li>Demonstradoras de Produto.</li>
+                                            <li>Vendedoras.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="see-more">Saiba</div>
+                            </div>
+                            
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <h3>2. Treinamento de Vendas</h3>
+                                <p>
+                                    Mapeamento de necessidades a partir do perfil do cargo, para criar treinamentos específicos. 
+                                </p>
+                                <div class="see-more">Saiba</div>
+                            </div>
+                            
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <h3>3. Supervisor</h3>
+                                <p>
+                                    Profissional com perfil de liderança e conhecimentos específicos do produto. 
+                                </p>
+                                <p>
+                                    Treinado para ser o guardião do sortimento e supervisionar as atendentes vendedoras. 
+                                </p>
+                                <p>
+                                    Rotina com roteiro programado para visitação nas lojas. 
+                                </p>
+                                <div class="see-more">Saiba</div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <h3>4. Recursos Humanos</h3>
+                                <ul>
+                                    <li>Emissão de documentos.</li>
+                                    <li>Controle de visitas e assiduidade.</li>
+                                    <li>Roteiro para supervisão das lojas.</li>
+                                    <li>Exames médicos.</li>
+                                    <li>Controle, Ficha de EPI e uniformes.</li>
+                                </ul>
+                                <div class="see-more">Saiba</div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <h3>5. Atendente Vendedora & Degustadora</h3>
+                                <ul>
+                                    <li>Abordagem e atendimento.</li>
+                                    <li>Apresentação e vendas. </li>
+                                    <li>Benefícios & Nutrição.</li>
+                                    <li>Dicas de preparo e receitas.</li>
+                                    <li>Degustação no Ponto de Venda.</li>
+                                    <li>Monitoramento e Boa Exposição.</li>
+                                </ul>
+                                <div class="see-more">Saiba</div>
+                            </div>
+                            
+                        </div>
                     </article>
                     <article>
                         

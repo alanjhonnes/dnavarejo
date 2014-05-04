@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9c0af0aac0bd6387a9243ab0ea21d4ea",
+    "hash": "40da1bc77223e5939f4f0f221909ab37",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1891,12 +1891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "98da9fdef197b1ad1ac05048c675938e0b5d14db"
+                "reference": "f146ba67f2779e925898bd007dc315fc9ae7e0c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/98da9fdef197b1ad1ac05048c675938e0b5d14db",
-                "reference": "98da9fdef197b1ad1ac05048c675938e0b5d14db",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/f146ba67f2779e925898bd007dc315fc9ae7e0c8",
+                "reference": "f146ba67f2779e925898bd007dc315fc9ae7e0c8",
                 "shasum": ""
             },
             "require": {
@@ -1962,7 +1962,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2014-04-28 18:11:57"
+            "time": "2014-05-02 17:38:15"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2148,6 +2148,54 @@
             "time": "2014-02-14 14:24:51"
         },
         {
+            "name": "sonata-project/datagrid-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
+                "reference": "99117a8ba70e56bad08797fe814e7996a68d5107"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/99117a8ba70e56bad08797fe814e7996a68d5107",
+                "reference": "99117a8ba70e56bad08797fe814e7996a68d5107",
+                "shasum": ""
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\DatagridBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataDatagridBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataDatagridBundle",
+            "homepage": "http://sonata-project.org/bundles/datagrid",
+            "keywords": [
+                "datagrid",
+                "sonata"
+            ],
+            "time": "2014-05-02 13:55:54"
+        },
+        {
             "name": "sonata-project/doctrine-extensions",
             "version": "1.0.2",
             "source": {
@@ -2202,12 +2250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "18ea96f455a4ea3dd2b3ae1cdeca36e7279ea83f"
+                "reference": "f35952c3e58e6cb50e2a773c3681859bf2469a07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/18ea96f455a4ea3dd2b3ae1cdeca36e7279ea83f",
-                "reference": "18ea96f455a4ea3dd2b3ae1cdeca36e7279ea83f",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/f35952c3e58e6cb50e2a773c3681859bf2469a07",
+                "reference": "f35952c3e58e6cb50e2a773c3681859bf2469a07",
                 "shasum": ""
             },
             "require": {
@@ -2262,7 +2310,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2014-04-23 08:15:01"
+            "time": "2014-04-29 11:25:21"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -2428,17 +2476,68 @@
             "time": "2014-03-31 09:18:53"
         },
         {
+            "name": "sonata-project/jquery-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonatajQueryBundle.git",
+                "reference": "8db2fbc85e57f193d22ed67f0223c8a717eeaad5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonatajQueryBundle/zipball/8db2fbc85e57f193d22ed67f0223c8a717eeaad5",
+                "reference": "8db2fbc85e57f193d22ed67f0223c8a717eeaad5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\jQueryBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonatajQueryBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonatajQueryBundle",
+            "homepage": "http://sonata-project.org/bundles/jquery",
+            "keywords": [
+                "jquery",
+                "sonata"
+            ],
+            "time": "2014-03-19 11:45:00"
+        },
+        {
             "name": "sonata-project/user-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "fa13c8a142c00d2b17f0d758f133280e3c978cb2"
+                "reference": "086173fd698d6bf2bc85d113f5551871d93d40aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/fa13c8a142c00d2b17f0d758f133280e3c978cb2",
-                "reference": "fa13c8a142c00d2b17f0d758f133280e3c978cb2",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/086173fd698d6bf2bc85d113f5551871d93d40aa",
+                "reference": "086173fd698d6bf2bc85d113f5551871d93d40aa",
                 "shasum": ""
             },
             "require": {
@@ -2448,6 +2547,7 @@
                 "nelmio/api-doc-bundle": "~2.4",
                 "sonata-project/admin-bundle": "~2.3@dev",
                 "sonata-project/core-bundle": "~2.2",
+                "sonata-project/datagrid-bundle": "~2.2@dev",
                 "sonata-project/doctrine-extensions": "~1.0",
                 "sonata-project/easy-extends-bundle": "~2.1",
                 "sonata-project/google-authenticator": "~1.0",
@@ -2496,7 +2596,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2014-04-28 17:10:29"
+            "time": "2014-05-02 13:49:49"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3100,7 +3200,9 @@
     "stability-flags": {
         "sonata-project/admin-bundle": 20,
         "sonata-project/doctrine-orm-admin-bundle": 20,
-        "sonata-project/user-bundle": 20
+        "sonata-project/user-bundle": 20,
+        "sonata-project/jquery-bundle": 20,
+        "sonata-project/datagrid-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
