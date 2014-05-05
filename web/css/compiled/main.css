@@ -3477,8 +3477,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.eot');
-  src: url('../../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../bundles/dnavarejohome/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6886,6 +6886,7 @@ button.close {
 body {
   font-family: Helvetica, Arial;
   background-color: #ffffff;
+  background-image: url(../../bundles/dnavarejohome/css/images/pattern.png);
 }
 h1,
 h2,
@@ -6898,6 +6899,9 @@ h6 {
 }
 p {
   margin-top: 0;
+}
+p:first-child {
+  margin-top: 10px;
 }
 p:last-child {
   margin-bottom: 0;
@@ -6912,7 +6916,7 @@ p:last-child {
   display: block;
   padding-top: 10px;
   height: 105px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/menu-gradient.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/menu-gradient.png);
   background-repeat: repeat-x;
 }
 #ribbon-left,
@@ -6925,12 +6929,12 @@ p:last-child {
 #ribbon-left {
   left: 0;
   margin-left: -67px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/menu-left.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/menu-left.png);
 }
 #ribbon-right {
   right: 0;
   margin-right: -67px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/menu-right.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/menu-right.png);
 }
 #ribbon-menu-stripe {
   width: 100%;
@@ -7016,27 +7020,27 @@ p:last-child {
 .arrow-red-down {
   width: 37px;
   height: 37px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-red-down.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/arrow-red-down.png);
 }
 .little-circles {
   width: 121px;
   height: 110px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/little-circles.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/little-circles.png);
 }
 .supermarket {
   width: 154px;
   height: 122px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/supermarket.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/supermarket.png);
 }
 .products {
   width: 119px;
   height: 153px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/products.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/products.png);
 }
 .girl-shopping-car {
   width: 114px;
   height: 133px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/girl-shopping-cart.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/girl-shopping-cart.png);
 }
 #work {
   font-size: 1.3em;
@@ -7064,7 +7068,7 @@ p:last-child {
   display: none;
   width: 330px;
   background-color: #ffffff;
-  background-image: url(../../../bundles/dnavarejohome/css/images/diagonal-stripe.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/diagonal-stripe.png);
 }
 #work h3 {
   margin-top: 0;
@@ -7086,7 +7090,7 @@ p:last-child {
 }
 .plus-button {
   cursor: pointer;
-  background-image: url(../../../bundles/dnavarejohome/css/images/plus.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/plus.png);
   width: 35px;
   height: 35px;
   -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -7190,7 +7194,7 @@ p:last-child {
   position: absolute;
   width: 32px;
   height: 31px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/arrows-sprite.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/arrows-sprite.png);
 }
 #work-arrow-1 {
   left: 228px;
@@ -7229,19 +7233,19 @@ p:last-child {
   background-position: center;
 }
 .icon-dna {
-  background-image: url(../../../bundles/dnavarejohome/css/images/icon-dna.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/icon-dna.png);
 }
 .icon-cart {
-  background-image: url(../../../bundles/dnavarejohome/css/images/icon-cart.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/icon-cart.png);
 }
 .icon-market {
-  background-image: url(../../../bundles/dnavarejohome/css/images/icon-market.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/icon-market.png);
 }
 .icon-circles {
-  background-image: url(../../../bundles/dnavarejohome/css/images/icon-circles.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/icon-circles.png);
 }
 .icon-itens {
-  background-image: url(../../../bundles/dnavarejohome/css/images/icon-itens.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/icon-itens.png);
 }
 #services {
   font-size: 1.3em;
@@ -7255,7 +7259,7 @@ p:last-child {
   padding-top: 6px;
   padding-left: 40px;
   padding-bottom: 2px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-yellow.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/arrow-yellow.png);
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -7282,7 +7286,7 @@ p:last-child {
   font-size: 0.9em;
 }
 .see-more {
-  background-image: url(../../../bundles/dnavarejohome/css/images/more-btn.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/more-btn.png);
   background-position: right center;
   background-repeat: no-repeat;
   font-size: 1.1em;
@@ -7296,7 +7300,7 @@ p:last-child {
 .girl-icon {
   position: relative;
   display: inline-block;
-  background-image: url(../../../bundles/dnavarejohome/css/images/green-girl-icon.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/green-girl-icon.png);
   background-repeat: no-repeat;
   width: 100px;
   height: 99px;
@@ -7311,16 +7315,16 @@ p:last-child {
   background-repeat: no-repeat;
 }
 .girl-icon .checkmark {
-  background-image: url(../../../bundles/dnavarejohome/css/images/checkmark-blue.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/checkmark-blue.png);
 }
 .girl-icon .crossmark {
   position: absolute;
-  background-image: url(../../../bundles/dnavarejohome/css/images/cross.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/cross.png);
 }
 .responsive-green-arrow {
   width: 48px;
   height: 47px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-green.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/arrow-green.png);
   background-repeat: no-repeat;
   margin-top: 80px;
   position: relative;
@@ -7331,7 +7335,7 @@ p:last-child {
 .resume {
   width: 218px;
   height: 229px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/resume.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/resume.png);
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -7340,7 +7344,7 @@ p:last-child {
 .apples {
   width: 173px;
   height: 170px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/apples.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/apples.png);
   background-repeat: no-repeat;
   position: absolute;
   top: 80px;
@@ -7349,7 +7353,7 @@ p:last-child {
   width: 99px;
   height: 251px;
   left: 178px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/girl.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/girl.png);
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -7389,42 +7393,42 @@ p:last-child {
 #recruitment-1 {
   width: 151px;
   height: 150px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-1.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/recruit-icon-1.png);
   left: 0px;
   top: 0px;
 }
 #recruitment-2 {
   width: 151px;
   height: 150px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-2.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/recruit-icon-2.png);
   left: 148px;
   top: 0px;
 }
 #recruitment-3 {
   width: 151px;
   height: 150px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-3.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/recruit-icon-3.png);
   left: 221px;
   top: 131px;
 }
 #recruitment-4 {
   width: 151px;
   height: 150px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-4.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/recruit-icon-4.png);
   left: 149px;
   top: 259px;
 }
 #recruitment-5 {
   width: 151px;
   height: 149px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-5.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/recruit-icon-5.png);
   left: 0px;
   top: 259px;
 }
 #recruitment-resume {
   width: 107px;
   height: 126px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-resume.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/recruit-resume.png);
   left: 87px;
   top: 132px;
 }
@@ -7448,7 +7452,7 @@ p:last-child {
   z-index: 1;
   width: 30px;
   height: 29px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/arrows-shadow-sprite.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/arrows-shadow-sprite.png);
 }
 .arrow-red-shadow-0 {
   background-position: 0px 0px;
@@ -7485,49 +7489,49 @@ p:last-child {
 #trainning-center {
   width: 151px;
   height: 150px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-center.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-center.png);
   left: 150px;
   top: 131px;
 }
 #trainning-1 {
   width: 134px;
   height: 133px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-1.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-1.png);
   left: 76px;
   top: 0px;
 }
 #trainning-2 {
   width: 134px;
   height: 133px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-2.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-2.png);
   left: 224px;
   top: 0px;
 }
 #trainning-3 {
   width: 151px;
   height: 150px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-3.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-3.png);
   left: 297px;
   top: 131px;
 }
 #trainning-4 {
   width: 134px;
   height: 133px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-4.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-4.png);
   left: 225px;
   top: 259px;
 }
 #trainning-5 {
   width: 134px;
   height: 133px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-5.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-5.png);
   left: 76px;
   top: 259px;
 }
 #trainning-6 {
   width: 134px;
   height: 133px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-6.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/trainning-icon-6.png);
   left: 0px;
   top: 132px;
 }
@@ -7594,7 +7598,7 @@ p:last-child {
   position: absolute;
   width: 50px;
   height: 49px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/checkmark-green.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/checkmark-green.png);
 }
 #clients-icons {
   margin-top: 30px;
@@ -7615,7 +7619,7 @@ p:last-child {
   display: inline-block;
   width: 185px;
   height: 183px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/circle-medium.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/circle-medium.png);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -7633,8 +7637,8 @@ p:last-child {
   height: 117px;
   position: absolute;
   border-radius: 50%;
-  left: 29px;
-  top: 28px;
+  left: 27px;
+  top: 27px;
   transition: all 0.4s ease-out;
 }
 #clients-cases .even {
@@ -7651,11 +7655,76 @@ p:last-child {
   position: absolute;
   margin: 0;
 }
+#case-page {
+  color: #ffffff;
+  font-size: 0.9em;
+  display: none;
+  position: absolute;
+  z-index: 10;
+  -ms-transform: translate(100%, 0px);
+  /* IE 9 */
+  -webkit-transform: translate(100%, 0px);
+  /* Chrome, Safari, Opera */
+  transform: translate(100%, 0px);
+  background-color: #536E78;
+  opacity: 0;
+}
+#case-page h2 {
+  margin-left: 84px;
+}
+#case-page p {
+  color: #ffffff;
+}
+#case-close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -38px;
+  margin-top: -38px;
+  width: 75px;
+  height: 75px;
+  background-image: url(../../bundles/dnavarejohome/css/images/case-close.png);
+}
+.client-logo {
+  position: absolute;
+  top: -52px;
+  left: -38px;
+  width: 152px;
+  height: 152px;
+  background-image: url(../../bundles/dnavarejohome/css/images/circle-small.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.client-logo img {
+  display: block;
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  border-radius: 50%;
+  left: 26px;
+  top: 26px;
+}
+.case-image-1,
+.case-image-2 {
+  position: relative;
+  width: 185px;
+  height: 183px;
+  background-image: url(../../bundles/dnavarejohome/css/images/circle-medium.png);
+  background-repeat: no-repeat;
+}
+.case-image-1 img,
+.case-image-2 img {
+  position: absolute;
+  left: 29px;
+  top: 29px;
+  border-radius: 50%;
+}
 address {
   margin-bottom: 0px;
 }
 #contact {
   font-size: 1.3em;
+  color: #382C5B;
 }
 #contact h1 {
   color: #35338B;
@@ -7710,17 +7779,17 @@ textarea {
 }
 #contact-icons .arrow-cream {
   width: 33px;
-  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-cream.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/arrow-cream.png);
   background-position: 0% 50%;
 }
 .icon-phone {
-  background-image: url(../../../bundles/dnavarejohome/css/images/contact-icon-phone.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/contact-icon-phone.png);
 }
 .icon-callcenter {
-  background-image: url(../../../bundles/dnavarejohome/css/images/contact-icon-callcenter.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/contact-icon-callcenter.png);
 }
 .icon-handshake {
-  background-image: url(../../../bundles/dnavarejohome/css/images/contact-icon-handshake.png);
+  background-image: url(../../bundles/dnavarejohome/css/images/contact-icon-handshake.png);
 }
 .no-border {
   border: 0px !important;

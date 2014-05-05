@@ -22,6 +22,7 @@
 body {
     font-family: Helvetica, Arial;
     background-color: #ffffff;
+    background-image: url(images/pattern.png);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-top: 0;
+}
+
+p:first-child {
+    margin-top: 10px;
 }
 
 p:last-child {
@@ -867,8 +872,8 @@ p:last-child {
         height: 117px;
         position: absolute;
         border-radius: 50%;
-        left: 29px;
-        top: 28px;
+        left: 27px;
+        top: 27px;
         transition: all 0.4s ease-out;
     }
     .even {
@@ -888,12 +893,87 @@ p:last-child {
     margin: 0;
 }
 
+#case-page {
+    color: #ffffff;
+    font-size: 0.9em;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    -ms-transform: translate(100%,0px); /* IE 9 */
+    -webkit-transform: translate(100%,0px); /* Chrome, Safari, Opera */
+    transform: translate(100%,0px);
+    background-color: #536E78;
+    opacity: 0;
+    h2 {
+        margin-left: 84px;
+    }
+    p {
+        color: #ffffff;
+    }
+}
+
+#case-close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -38px;
+    margin-top: -38px;
+    width: 75px;
+    height: 75px;
+    background-image: url(images/case-close.png);
+}
+
+.client-logo {
+    position: absolute;
+    top: -52px;
+    left: -38px;
+    width: 152px;
+    height: 152px;
+    background-image: url(images/circle-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    img {
+        display: block;
+        width: 84px;
+        height: 84px;
+        position: absolute;
+        border-radius: 50%;
+        left: 26px; 
+        top: 26px;
+    }
+}
+
+
+.case-image-1, .case-image-2 {
+    position: relative;
+    width: 185px;
+    height: 183px;
+    background-image: url(images/circle-medium.png);
+    background-repeat: no-repeat;
+    img {
+        position: absolute;
+        left: 29px;
+        top: 29px;
+        border-radius: 50%;
+    }
+}
+
+.case-image-1 {
+    
+}
+
+.case-image-2 {
+    
+}
+
+
 address {
     margin-bottom: 0px;
 }
 
 #contact {
     font-size: 1.3em;
+    color: #382C5B;
     h1 {
         color: #35338B;
     }

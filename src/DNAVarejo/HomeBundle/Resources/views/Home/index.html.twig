@@ -7,7 +7,7 @@
         <meta name="description" content="{% block description %}{% endblock %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% block stylesheets %}
-
+            
             {% stylesheets 
                 'bundles/dnavarejohome/css/normalize.css'
                 'bundles/dnavarejohome/css/bootstrap.css' 
@@ -15,6 +15,7 @@
                 output='css/compiled/main.css'
                 filter='cssrewrite' 
             %}
+            
             <link rel="stylesheet" href="{{ asset_url }}" />
             {% endstylesheets %}
         {% endblock %}
@@ -46,7 +47,7 @@
         </nav>
         <div  id="content" class="container">
 
-            <section id="about">
+            <section id="about" class="primary-section">
                 <div class="row">
                     <div class="col-md-8 col-md-push-16">
                         <div id="white-bar">
@@ -75,7 +76,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section id="work">
+            <section id="work" class="primary-section">
                 <h1>Fazemos</h1>
                 <p>nosso trabalho para que você se dedique ao que sabe fazer melhor: seu produto.</p>
                 <div>
@@ -147,7 +148,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section id="services">
+            <section id="services" class="primary-section">
                 <h1>Serviços</h1>
                 <p>
                     que promovem a sinergia entre clientes, redes de varejo e profissionais contratados, abrangendo todos os níveis estratégicos da Representação Comercial e Trade Marketing.<br/>
@@ -328,7 +329,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section id="clients">
+            <section id="clients" class="primary-section">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box">
@@ -366,6 +367,42 @@
                         </div>
                     </div>
                     <div class="col-md-12">
+                        <div id="case-page" class="box">
+                            <div class="client-logo">
+                                <img src="{{ asset('bundles/dnavarejohome/images/case-1.jpg') }}" alt="" width="84" height="84"/>
+                            </div>
+                            <h2>Extra Supermercado</h2>
+                            <div class="col-md-12">
+
+                                <h4>A Empresa</h4>
+                                <p>
+                                    A Zucca Cogumelos surgiu há 15 anos no interior paulista. Desconhecidos no Brasil, os cogumelos mostraram-se um negócio viável. Desde então, a Zucca investe em tecnologia, produção e variedade para atender ao mercado crescente.
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="case-image-1">
+                                    <img src="{{ asset('bundles/dnavarejohome/images/case-1.jpg') }}" alt="" width="113" height="113"/>
+                                </div>
+                            </div>
+                                
+                            <div class="clearfix"></div>
+                            <div class="col-md-24">
+                            <h4>O que fizemos</h4>
+                            <p>
+                                Além da Representação Comercial, criamos uma equipe dedicada à Zucca e buscamos ampliar mercados e a carteira de clientes, incluindo grandes redes de supermercado como Pão de Açúcar, Walmart e Carrefour.
+                            </p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="case-image-2">
+                                    <img src="{{ asset('bundles/dnavarejohome/images/case-1.jpg') }}" alt="" width="113" height="113"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <h4>Resultados</h4>
+                                <p>Com o aumento da produção, a Zucca conta com uma equipe exclusiva, permitindo o fortalecimento da marca, aumento do share de mercado e a fidelização do cliente.</p>
+                            </div>
+                            <div id="case-close"></div>
+                        </div>
                         <div id="clients-cases">
                             <ul>
                                 <li>
@@ -398,7 +435,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section id="contact">
+            <section id="contact" class="primary-section">
                 <h1>Contato</h1>
                 <span class="subline">que começa uma história de sucesso.</span>
                 <div class="row">
@@ -443,10 +480,8 @@
 
         </div>
 
-    </div>
-
-    {% block javascripts %}
-        {% javascripts 
+        {% block javascripts %}
+            {% javascripts 
             '@DNAVarejoHomeBundle/Resources/public/js/jquery-1.11.0.min.js'
             '@DNAVarejoHomeBundle/Resources/public/js/bootstrap.min.js'
             '@DNAVarejoHomeBundle/Resources/public/js/gsap/TweenMax.min.js'
@@ -456,25 +491,25 @@
             '@DNAVarejoHomeBundle/Resources/public/js/scrollmagic/jquery.scrollmagic.debug.js'
             '@DNAVarejoHomeBundle/Resources/public/js/main.js'
             output='js/compiled/main.js' 
-        %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-        {% endjavascripts %}
-        <script>
-            (function(b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                        function() {
-                            (b[l].q = b[l].q || []).push(arguments)
-                        });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = 'http://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-XXXXX-X');
-            ga('send', 'pageview');
-        </script>
-    {% endblock %}
-</body>
+            %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+            <script>
+                (function(b, o, i, l, e, r) {
+                    b.GoogleAnalyticsObject = l;
+                    b[l] || (b[l] =
+                            function() {
+                                (b[l].q = b[l].q || []).push(arguments)
+                            });
+                    b[l].l = +new Date;
+                    e = o.createElement(i);
+                    r = o.getElementsByTagName(i)[0];
+                    e.src = 'http://www.google-analytics.com/analytics.js';
+                    r.parentNode.insertBefore(e, r)
+                }(window, document, 'script', 'ga'));
+                ga('create', 'UA-XXXXX-X');
+                ga('send', 'pageview');
+            </script>
+        {% endblock %}
+    </body>
 </html>
