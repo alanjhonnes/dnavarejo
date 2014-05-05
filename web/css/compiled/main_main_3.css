@@ -1,10 +1,7 @@
-/* line 20, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000320}}
 body {
+  font-family: Helvetica, Arial;
   background-color: #ffffff;
 }
-/* line 24, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000324}}
 h1,
 h2,
 h3,
@@ -12,9 +9,14 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  margin-bottom: 0.1em;
 }
-/* line 28, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000328}}
+p {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
 #ribbon-menu {
   font-weight: bold;
   position: fixed;
@@ -28,8 +30,6 @@ h6 {
   background-image: url(../../../bundles/dnavarejohome/css/images/menu-gradient.png);
   background-repeat: repeat-x;
 }
-/* line 42, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000342}}
 #ribbon-left,
 #ribbon-right {
   position: absolute;
@@ -37,29 +37,21 @@ h6 {
   height: 105px;
   margin-top: -10px;
 }
-/* line 49, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000349}}
 #ribbon-left {
   left: 0;
   margin-left: -67px;
   background-image: url(../../../bundles/dnavarejohome/css/images/menu-left.png);
 }
-/* line 56, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000356}}
 #ribbon-right {
   right: 0;
   margin-right: -67px;
   background-image: url(../../../bundles/dnavarejohome/css/images/menu-right.png);
 }
-/* line 62, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000362}}
 #ribbon-menu-stripe {
   width: 100%;
   display: table-row;
   height: 67px;
 }
-/* line 66, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000366}}
 #ribbon-menu-stripe a {
   display: table-cell;
   cursor: pointer;
@@ -79,20 +71,14 @@ h6 {
   color: #27348B;
   text-decoration: none;
 }
-/* line 80, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000380}}
 #ribbon-menu-stripe a:hover,
 #ribbon-menu-stripe a.active-button {
   background: #64257E;
   color: #ffffff;
 }
-/* line 86, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000386}}
 #ribbon-menu-stripe span {
   line-height: 67px;
 }
-/* line 91, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\0000391}}
 #logo {
   display: table-cell;
   vertical-align: middle;
@@ -100,20 +86,15 @@ h6 {
   width: 16.6%;
   padding: 0 10px;
 }
-/* line 100, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003100}}
 #content {
   background-color: #334C63;
   min-height: 4000px;
 }
-/* line 104, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003104}}
 #content section {
   min-height: 100%;
   padding-top: 100px;
+  padding-bottom: 30px;
 }
-/* line 113, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003113}}
 .divider {
   position: absolute;
   width: 100%;
@@ -122,21 +103,752 @@ h6 {
   opacity: 0.4;
   background-color: #322245;
 }
-/* line 128, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003128}}
 .box {
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px #000000;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
-/* line 132, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003132}}
 #about {
   color: #ffffff;
   font-size: 1.5em;
 }
-/* line 135, G:\Jobs\dnavarejo\src\DNAVarejo\HomeBundle\Resources\public\less\main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Jobs\/dnavarejo\/src\/DNAVarejo\/HomeBundle\/Resources\/public\/less\/main\.less}line{font-family:\00003135}}
 #about .box {
-  background-color: #cfe5ed;
+  margin-top: 50px;
+  background-color: #839ca6;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+}
+#white-bar {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
+}
+#white-bar div {
+  margin: 0 auto;
+}
+.arrow-red-down {
+  width: 37px;
+  height: 37px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-red-down.png);
+}
+.little-circles {
+  width: 121px;
+  height: 110px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/little-circles.png);
+}
+.supermarket {
+  width: 154px;
+  height: 122px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/supermarket.png);
+}
+.products {
+  width: 119px;
+  height: 153px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/products.png);
+}
+.girl-shopping-car {
+  width: 114px;
+  height: 133px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/girl-shopping-cart.png);
+}
+#work {
+  font-size: 1.3em;
+  position: relative;
+  color: #92bace;
+}
+#work h1 {
+  color: #282c64;
+}
+#work > div {
+  width: 495px;
+  height: 462px;
+  position: relative;
+  margin: 0 auto;
+}
+#work article {
+  position: absolute;
+}
+#work article > div {
+  position: absolute;
+}
+#work .box {
+  font-size: 0.8em;
+  color: #282c64;
+  display: none;
+  width: 330px;
+  background-color: #ffffff;
+  background-image: url(../../../bundles/dnavarejohome/css/images/diagonal-stripe.png);
+}
+#work h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #c73747;
+}
+#work .icon-label,
+#work .box {
+  font-size: 0.8em;
+}
+.icon-label {
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  color: #64257E;
+  background-color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+}
+.plus-button {
+  cursor: pointer;
+  background-image: url(../../../bundles/dnavarejohome/css/images/plus.png);
+  width: 35px;
+  height: 35px;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  -moz-transition: -moz-transform 0.25s ease-out;
+  -o-transition: -o-transform 0.25s ease-out;
+  -ms-transition: -ms-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+}
+.open {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#work-1 {
+  left: 80px;
+  top: 18px;
+}
+#work-1 .icon-label {
+  text-align: left;
+  width: 160px;
+  left: -87px;
+  top: 17px;
+}
+#work-2 {
+  left: 264px;
+  top: 0px;
+}
+#work-2 .icon-label {
+  text-align: left;
+  width: 100px;
+  left: -28px;
+  top: 10px;
+}
+#work-2 .plus-button {
+  left: 110px;
+  top: 80px;
+}
+#work-2 .box {
+  left: 132px;
+  top: -24px;
+}
+#work-3 {
+  left: 370px;
+  top: 148px;
+}
+#work-3 .icon-label {
+  text-align: right;
+  width: 168px;
+  left: 75px;
+  top: 14px;
+}
+#work-4 {
+  left: 290px;
+  top: 315px;
+}
+#work-4 .icon-label {
+  text-align: right;
+  width: 140px;
+  left: 37px;
+  top: 27px;
+}
+#work-4 .plus-button {
+  left: 100px;
+  top: 100px;
+}
+#work-4 .box {
+  left: 127px;
+  top: -8px;
+}
+#work-5 {
+  left: 109px;
+  top: 335px;
+}
+#work-5 .icon-label {
+  text-align: left;
+  width: 115px;
+  left: -44px;
+  top: 36px;
+}
+#work-6 {
+  left: 3px;
+  top: 186px;
+}
+#work-6 .icon-label {
+  text-align: left;
+  width: 110px;
+  left: -29px;
+  top: 17px;
+}
+#work-6 .plus-button {
+  left: 7px;
+  top: 100px;
+}
+#work-6 .box {
+  left: -276px;
+  top: 88px;
+}
+.arrow-red {
+  position: absolute;
+  width: 32px;
+  height: 31px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/arrows-sprite.png);
+}
+#work-arrow-1 {
+  left: 228px;
+  top: 48px;
+}
+#work-arrow-2 {
+  background-position: -32px 0px;
+  left: 382px;
+  top: 126px;
+}
+#work-arrow-3 {
+  background-position: -64px 0px;
+  left: 392px;
+  top: 295px;
+}
+#work-arrow-4 {
+  background-position: -96px 0px;
+  left: 258px;
+  top: 388px;
+}
+#work-arrow-5 {
+  background-position: -128px 0px;
+  left: 98px;
+  top: 329px;
+}
+#work-arrow-6 {
+  background-position: -160px 0px;
+  left: 88px;
+  top: 155px;
+}
+.icon {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-dna {
+  background-image: url(../../../bundles/dnavarejohome/css/images/icon-dna.png);
+}
+.icon-cart {
+  background-image: url(../../../bundles/dnavarejohome/css/images/icon-cart.png);
+}
+.icon-market {
+  background-image: url(../../../bundles/dnavarejohome/css/images/icon-market.png);
+}
+.icon-circles {
+  background-image: url(../../../bundles/dnavarejohome/css/images/icon-circles.png);
+}
+.icon-itens {
+  background-image: url(../../../bundles/dnavarejohome/css/images/icon-itens.png);
+}
+#services {
+  font-size: 1.3em;
+  color: #99D3D6;
+}
+#services h1,
+#services h3 {
+  color: #53C3EE;
+}
+#services h3 {
+  padding-top: 6px;
+  padding-left: 40px;
+  padding-bottom: 2px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-yellow.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+#services .counter {
+  color: #DEDC00;
+}
+#services .box {
+  position: relative;
+  background-color: #FECD42;
+  vertical-align: middle;
+  text-align: center;
+}
+#services .row > div {
+  height: 250px;
+  vertical-align: middle;
+}
+#services ul {
+  list-style-position: inside;
+}
+#services ul ul {
+  color: #ffffff;
+}
+#services-list {
+  font-size: 0.9em;
+}
+.see-more {
+  background-image: url(../../../bundles/dnavarejohome/css/images/more-btn.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size: 1.1em;
+  padding-right: 30px;
+  text-align: right;
+  cursor: pointer;
+}
+.see-more:hover {
+  text-decoration: underline;
+}
+.girl-icon {
+  position: relative;
+  display: inline-block;
+  background-image: url(../../../bundles/dnavarejohome/css/images/green-girl-icon.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 99px;
+}
+.girl-icon .checkmark,
+.girl-icon .crossmark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  left: 49px;
+  top: 61px;
+  background-repeat: no-repeat;
+}
+.girl-icon .checkmark {
+  background-image: url(../../../bundles/dnavarejohome/css/images/checkmark-blue.png);
+}
+.girl-icon .crossmark {
+  position: absolute;
+  background-image: url(../../../bundles/dnavarejohome/css/images/cross.png);
+}
+.responsive-green-arrow {
+  width: 48px;
+  height: 47px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-green.png);
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  position: relative;
+  left: -24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resume {
+  width: 218px;
+  height: 229px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/resume.png);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  left: -15px;
+}
+.apples {
+  width: 173px;
+  height: 170px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/apples.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 80px;
+}
+.girl {
+  width: 99px;
+  height: 251px;
+  left: 178px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/girl.png);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+#recruitment .box {
+  background-color: #8eadb9;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+#recruitment,
+#trainning {
+  font-size: 1.2em;
+}
+#recruitment h1,
+#trainning h1 {
+  color: #ffffff;
+}
+#recruitment p,
+#trainning p {
+  color: #2F285B;
+}
+#recruitment-icons {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 366px;
+  height: 400px;
+}
+#recruitment-icons div {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+#recruitment-resume {
+  left: 0px;
+  top: 0px;
+}
+#recruitment-1 {
+  width: 151px;
+  height: 150px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-1.png);
+  left: 0px;
+  top: 0px;
+}
+#recruitment-2 {
+  width: 151px;
+  height: 150px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-2.png);
+  left: 148px;
+  top: 0px;
+}
+#recruitment-3 {
+  width: 151px;
+  height: 150px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-3.png);
+  left: 221px;
+  top: 131px;
+}
+#recruitment-4 {
+  width: 151px;
+  height: 150px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-4.png);
+  left: 149px;
+  top: 259px;
+}
+#recruitment-5 {
+  width: 151px;
+  height: 149px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-icon-5.png);
+  left: 0px;
+  top: 259px;
+}
+#recruitment-resume {
+  width: 107px;
+  height: 126px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/recruit-resume.png);
+  left: 87px;
+  top: 132px;
+}
+#recruitment-arrow-1 {
+  left: 121px;
+  top: 44px;
+}
+#recruitment-arrow-2 {
+  left: 245px;
+  top: 110px;
+}
+#recruitment-arrow-3 {
+  left: 245px;
+  top: 249px;
+}
+#recruitment-arrow-4 {
+  left: 124px;
+  top: 321px;
+}
+.arrow-red-shadow {
+  z-index: 1;
+  width: 30px;
+  height: 29px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/arrows-shadow-sprite.png);
+}
+.arrow-red-shadow-0 {
+  background-position: 0px 0px;
+}
+.arrow-red-shadow-45 {
+  background-position: -30px 0px;
+}
+.arrow-red-shadow-135 {
+  background-position: -60px 0px;
+}
+.arrow-red-shadow-180 {
+  background-position: -90px 0px;
+}
+.arrow-red-shadow-225 {
+  background-position: -120px 0px;
+}
+#trainning .box {
+  background-color: #6198ad;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+#trainning-icons {
+  position: relative;
+  width: 430px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#trainning-icons div {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+#trainning-center {
+  width: 151px;
+  height: 150px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-center.png);
+  left: 150px;
+  top: 131px;
+}
+#trainning-1 {
+  width: 134px;
+  height: 133px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-1.png);
+  left: 76px;
+  top: 0px;
+}
+#trainning-2 {
+  width: 134px;
+  height: 133px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-2.png);
+  left: 224px;
+  top: 0px;
+}
+#trainning-3 {
+  width: 151px;
+  height: 150px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-3.png);
+  left: 297px;
+  top: 131px;
+}
+#trainning-4 {
+  width: 134px;
+  height: 133px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-4.png);
+  left: 225px;
+  top: 259px;
+}
+#trainning-5 {
+  width: 134px;
+  height: 133px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-5.png);
+  left: 76px;
+  top: 259px;
+}
+#trainning-6 {
+  width: 134px;
+  height: 133px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/trainning-icon-6.png);
+  left: 0px;
+  top: 132px;
+}
+#trainning-arrow-1 {
+  left: 201px;
+  top: 44px;
+}
+#trainning-arrow-2 {
+  left: 323px;
+  top: 110px;
+}
+#trainning-arrow-3 {
+  left: 323px;
+  top: 249px;
+}
+#trainning-arrow-4 {
+  left: 201px;
+  top: 321px;
+}
+#trainning-arrow-5 {
+  left: 81px;
+  top: 249px;
+}
+#clients {
+  font-size: 1.3em;
+}
+#clients h1 {
+  color: #ffffff;
+}
+#clients .subline {
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: block;
+}
+#clients p {
+  color: #0B508A;
+}
+#clients .box {
+  background-color: #63919f;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+.client-icon {
+  display: inline-block;
+  width: 150px;
+  height: 180px;
+  position: relative;
+}
+.client-icon .icon-label {
+  position: absolute;
+  top: 152px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+}
+.client-icon .checkmark-green {
+  left: 93px;
+  top: -10px;
+}
+.checkmark-green {
+  position: absolute;
+  width: 50px;
+  height: 49px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/checkmark-green.png);
+}
+#clients-icons {
+  margin-top: 30px;
+  vertical-align: middle;
+}
+#clients-icons .arrow-red-shadow {
+  display: inline-block;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+#clients-cases {
+  height: 690px;
+  overflow: hidden;
+}
+#clients-cases li {
+  position: relative;
+  display: inline-block;
+  width: 185px;
+  height: 183px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/circle-medium.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+#clients-cases li:hover img {
+  box-shadow: 0px 0px 8px 5px #ffffff;
+  border-color: #ffffff;
+}
+#clients-cases img {
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  display: block;
+  width: 117px;
+  height: 117px;
+  position: absolute;
+  border-radius: 50%;
+  left: 29px;
+  top: 28px;
+  transition: all 0.4s ease-out;
+}
+#clients-cases .even {
+  top: 60px;
+}
+#clients-cases .plus-button {
+  position: absolute;
+  right: 7px;
+  top: 17px;
+}
+.cases-list {
+  float: left;
+  height: 690px;
+  position: absolute;
+  margin: 0;
+}
+address {
+  margin-bottom: 0px;
+}
+#contact {
+  font-size: 1.3em;
+}
+#contact h1 {
+  color: #35338B;
+}
+#contact .subline {
+  color: #35338B;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  display: block;
+}
+#contact .box {
+  width: 75%;
+  color: #242755;
+  background-color: #B2CBD8;
+}
+#contact form p {
+  color: #ffffff;
+}
+input[type=text],
+textarea {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-width: 0px;
+  display: block;
+  color: #29306a;
+  width: 80%;
+  background-color: #B2CBD8;
+}
+::-webkit-input-placeholder {
+  color: #4551b4;
+}
+:-moz-placeholder {
+  color: #4551b4;
+}
+::-moz-placeholder {
+  color: #4551b4;
+}
+:-ms-input-placeholder {
+  color: #4551b4;
+}
+#contact-icons {
+  margin-top: 30px;
+}
+#contact-icons div {
+  display: inline-block;
+  width: 116px;
+  height: 115px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+#contact-icons .arrow-cream {
+  width: 33px;
+  background-image: url(../../../bundles/dnavarejohome/css/images/arrow-cream.png);
+  background-position: 0% 50%;
+}
+.icon-phone {
+  background-image: url(../../../bundles/dnavarejohome/css/images/contact-icon-phone.png);
+}
+.icon-callcenter {
+  background-image: url(../../../bundles/dnavarejohome/css/images/contact-icon-callcenter.png);
+}
+.icon-handshake {
+  background-image: url(../../../bundles/dnavarejohome/css/images/contact-icon-handshake.png);
+}
+.no-border {
+  border: 0px !important;
+}
+/* Remove padding */
+.no-padding {
+  padding: 0px !important;
+}
+/* Remove margins */
+.no-margin {
+  margin: 0px !important;
+}
+/* Remove box shadow */
+.no-shadow {
+  box-shadow: none!important;
 }

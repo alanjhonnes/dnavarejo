@@ -1,3 +1,5 @@
+var controller;
+
 $(document).ready(function(){
     
     var $header = $('header');
@@ -83,13 +85,24 @@ $(document).ready(function(){
         //scroll down to the respective section
         var yOffset = $("section:eq(" + sectionIndex + ")").offset().top - navHeight;
         TweenLite.to(window, 0.6, { scrollTo: { y: yOffset } } );
-        
-        
     });
     
-    $(".plus-button").click(function(){
+    $("#work .plus-button").click(function(){
        $(this).toggleClass("open").prev().fadeToggle("fast");
     });
+    
+    controller = new ScrollMagic();
+    
+    var aboutTimeline = new TimelineMax();
+    aboutTimeline.add(new TweenMax.staggerFrom($("#white-bar div"), 0.7, { opacity: 0, y: "-=50" }, 0.2 ));
+
+    // build scene
+    var aboutScene = new ScrollScene({triggerElement: "#about"})
+                                    .setTween(aboutTimeline)
+                                    .addTo(controller);
+
+    // show indicators (requires debug extension)
+    scene.addIndicators();
     
     
     

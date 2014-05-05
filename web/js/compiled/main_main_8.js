@@ -1,5 +1,3 @@
-var controller;
-
 $(document).ready(function(){
     
     var $header = $('header');
@@ -91,14 +89,12 @@ $(document).ready(function(){
        $(this).toggleClass("open").prev().fadeToggle("fast");
     });
     
-    controller = new ScrollMagic();
     
-    var aboutTimeline = new TimelineMax();
-    aboutTimeline.add(new TweenMax.staggerFrom($("#white-bar div"), 0.7, { opacity: 0, y: "-=50" }, 0.2 ));
+    var tween = TweenMax.to("#animate1", 0.5, {backgroundColor: "green", scale: 2.5});
 
     // build scene
-    var aboutScene = new ScrollScene({triggerElement: "#about"})
-                                    .setTween(aboutTimeline)
+    var scene = new ScrollScene({triggerElement: "#trigger1"})
+                                    .setTween(tween)
                                     .addTo(controller);
 
     // show indicators (requires debug extension)
