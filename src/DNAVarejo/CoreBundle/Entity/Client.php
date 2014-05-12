@@ -25,12 +25,6 @@ class Client {
      */
     protected $name;
     
-    /**
-     * @ORM\Column(type="string", length=255)
-     * @Assert\NotBlank()
-     * @var string
-     */
-    protected $logo;
     
     /**
      * @ORM\Column(type="string", length=400)
@@ -52,13 +46,23 @@ class Client {
     protected $results;
     
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media",cascade={"persist"})
+     * @ORM\JoinColumn(name="media_logo_id", referencedColumnName="id")
+     * @Assert\NotBlank()
+     * @var string
+     */
+    protected $logo;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media",cascade={"persist"})
+     * @ORM\JoinColumn(name="media_image1_id", referencedColumnName="id")
      * @var string
      */
     protected $image1;
     
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="Application\Sonata\MediaBundle\Entity\Media",cascade={"persist"})
+     * @ORM\JoinColumn(name="media_image2_id", referencedColumnName="id")
      * @var string
      */
     protected $image2;
@@ -95,29 +99,6 @@ class Client {
     public function getName()
     {
         return $this->name;
-    }
-
-    /**
-     * Set logo
-     *
-     * @param string $logo
-     * @return Client
-     */
-    public function setLogo($logo)
-    {
-        $this->logo = $logo;
-
-        return $this;
-    }
-
-    /**
-     * Get logo
-     *
-     * @return string 
-     */
-    public function getLogo()
-    {
-        return $this->logo;
     }
 
     /**
@@ -189,13 +170,37 @@ class Client {
         return $this->results;
     }
 
+
+    /**
+     * Set logo
+     *
+     * @param \Application\Sonata\MediaBundle\Entity\Media $logo
+     * @return Client
+     */
+    public function setLogo(\Application\Sonata\MediaBundle\Entity\Media $logo = null)
+    {
+        $this->logo = $logo;
+
+        return $this;
+    }
+
+    /**
+     * Get logo
+     *
+     * @return \Application\Sonata\MediaBundle\Entity\Media 
+     */
+    public function getLogo()
+    {
+        return $this->logo;
+    }
+
     /**
      * Set image1
      *
-     * @param string $image1
+     * @param \Application\Sonata\MediaBundle\Entity\Media $image1
      * @return Client
      */
-    public function setImage1($image1)
+    public function setImage1(\Application\Sonata\MediaBundle\Entity\Media $image1 = null)
     {
         $this->image1 = $image1;
 
@@ -205,7 +210,7 @@ class Client {
     /**
      * Get image1
      *
-     * @return string 
+     * @return \Application\Sonata\MediaBundle\Entity\Media 
      */
     public function getImage1()
     {
@@ -215,10 +220,10 @@ class Client {
     /**
      * Set image2
      *
-     * @param string $image2
+     * @param \Application\Sonata\MediaBundle\Entity\Media $image2
      * @return Client
      */
-    public function setImage2($image2)
+    public function setImage2(\Application\Sonata\MediaBundle\Entity\Media $image2 = null)
     {
         $this->image2 = $image2;
 
@@ -228,7 +233,7 @@ class Client {
     /**
      * Get image2
      *
-     * @return string 
+     * @return \Application\Sonata\MediaBundle\Entity\Media 
      */
     public function getImage2()
     {

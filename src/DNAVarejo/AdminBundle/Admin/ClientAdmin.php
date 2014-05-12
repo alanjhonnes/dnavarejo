@@ -19,13 +19,38 @@ class ClientAdmin extends Admin {
     {
         $formMapper
             ->add('name', 'text', array('label' => 'Nome do Cliente'))
-            ->add('logo', 'text', array('label' => 'Logotipo'))
+            
             ->add('about', 'text', array('label' => 'Sobre'))
             ->add('description', 'text', array('label' => 'Descrição'))
             ->add('results', 'text', array('label' => 'Resultados'))
-            ->add('image1', 'text', array('label' => 'Imagem 1'))
-            ->add('image2', 'text', array('label' => 'Imagem 2'))
+            ->add('logo', 'sonata_media_type', 
+                array(
+                   'label' => 'Logotipo',
+                    'provider' => 'sonata.media.provider.image',
+                    'context'  => 'default',
+                    'new_on_update' => false
+                )
+            )
+            ->add('image1', 'sonata_media_type', 
+                array(
+                   'label' => 'Imagem 1',
+                    'required' => false,
+                    'provider' => 'sonata.media.provider.image',
+                    'context'  => 'default',
+                    'new_on_update' => false
+                )
+            )
+            ->add('image2', 'sonata_media_type', 
+               array(
+                   'label' => 'Imagem 2',
+                   'required' => false,
+                    'provider' => 'sonata.media.provider.image',
+                    'context'  => 'default',
+                    'new_on_update' => false
+               )
+            )
         ;
+        
     }
 
     // Fields to be shown on filter forms

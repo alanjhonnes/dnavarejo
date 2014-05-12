@@ -8,6 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'Sonata\\jQueryBundle\\' => array($vendorDir . '/sonata-project/jquery-bundle'),
     'Sonata\\UserBundle\\' => array($vendorDir . '/sonata-project/user-bundle'),
+    'Sonata\\NotificationBundle\\' => array($vendorDir . '/sonata-project/notification-bundle'),
+    'Sonata\\MediaBundle\\' => array($vendorDir . '/sonata-project/media-bundle'),
+    'Sonata\\IntlBundle\\' => array($vendorDir . '/sonata-project/intl-bundle'),
     'Sonata\\EasyExtendsBundle\\' => array($vendorDir . '/sonata-project/easy-extends-bundle'),
     'Sonata\\Doctrine\\Tests\\' => array($vendorDir . '/sonata-project/doctrine-extensions/tests'),
     'Sonata\\Doctrine\\' => array($vendorDir . '/sonata-project/doctrine-extensions/src'),

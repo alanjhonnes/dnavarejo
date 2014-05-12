@@ -28,6 +28,11 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    
+    form:
+        resources:
+            #other files
+            - 'ApplicationSonataMediaBundle:Form:media_widgets.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -53,13 +58,28 @@ doctrine:
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8
+        #driver: pdo_mysql
+        #host: SFAS
+        #port: ~
+        #dbname: dnavarejo
+        #user: root
+        #password: ~
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
         # path:     "%database_path%"
+        types:
+            json: Sonata\Doctrine\Types\JsonType
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        #auto_mapping: true
+        entity_managers:
+            default:
+                mappings:
+                    ApplicationSonataMediaBundle: ~
+                    SonataMediaBundle: ~
+                    DNAVarejoCoreBundle: ~
+        
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -81,3 +101,34 @@ sonata_block:
 sonata_admin:
     title:      DNAVarejo
     title_logo: bundles/dnavarejoadmin/images/logo.png
+    
+sonata_media:
+    # if you don't use default namespace configuration
+    #class:
+    #    media: MyVendor\MediaBundle\Entity\Media
+    #    gallery: MyVendor\MediaBundle\Entity\Gallery
+    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
+    default_context: default
+    db_driver: doctrine_orm
+    providers:
+        image:
+            resizer: sonata.media.resizer.square
+    contexts:
+        default:  # the default context is mandatory
+            providers:
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+
+            formats:
+                small: { width: 100, height: 100, quality: 70}
+                medium: { width: 250, height: 250, quality: 70}
+                big:   { width: 500, height: 500, quality: 70}
+
+    cdn:
+        server:
+            path: /jobs/DNA/web/uploads/media #/uploads/media # http://media.sonata-project.org/
+
+    filesystem:
+        local:
+            directory:  %kernel.root_dir%/../web/uploads/media
+            create:     false
